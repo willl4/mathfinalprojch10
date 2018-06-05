@@ -32,7 +32,6 @@ print('Use the * to show multiplication. Ex: 3x^2 is 3*x**2')
 
 function = input('Enter the function: ')
 center = int(input('Enter the center: '))
-order = 
 
 range1 = int(2/0.001)
 x = float(center-1)
@@ -105,5 +104,17 @@ for i in range(0,len(ninederiv)-1):
     valtenderiv = (ninederiv[i+1]-ninederiv[i])/deltx
     tenderiv.append(valtenderiv)
 
+f0 = fval(1000)
+f1 = onederiv(1000)
+f2 = twoderiv(1000)
+f3 = threederiv(1000)
+f4 = fourderiv(1000)
+f5 = fivederiv(1000)
+f6 = sixderiv(1000)
+f7 = sevenderiv(1000)
+f8 = eightderiv(1000)
+f9 = ninederiv(1000)
+f10 = tenderiv(1000)
 
 print("Coefficients of each order f u prime:")
+print(str("f0: ")+int(f0))
